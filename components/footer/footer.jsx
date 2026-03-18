@@ -16,8 +16,8 @@ const FooterOne = () => {
                 <div className="row g-4 justify-content-center align-items-center">
                   <div className="col-lg-5">
                     <p className="mb-0 ff-2 text-dark text-center text-lg-start">
-                      {" "}
-                      &copy; Dorkcoin 2026. Built by Real Dorks.{" "}
+                      &copy; Dorkcoin 2026. <a href="https://github.com/dorkcore/website/">Built</a> by Real Dorks.
+                    
                     </p>
                   </div>
                   <div className="col-lg-7">
