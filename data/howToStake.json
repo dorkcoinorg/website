@@ -1,0 +1,74 @@
+{
+  "howToStake": [
+    {
+  "id": 1,
+  "title": "DOWNLOAD DORK CORE",
+  "text": "Download and install Dork Core for Windows, Linux, or MacOS. Launch the wallet and let it fully sync with the network so you’re ready to start staking.",
+  "y": "25"
+},
+{
+  "id": 2,
+  "title": "DEPOSIT DORK",
+  "text": "Add coins into your wallet by sending from an exchange or claiming from the Dork Faucet. Once the coins arrive, you’re ready to put them to work.",
+  "y": "24"
+},
+{
+  "id": 3,
+  "title": "KEEP ONLINE",
+  "text": "Keep your wallet online and unlocked. Staking runs automatically in the background while your wallet is open, giving you a chance to earn rewards.",
+  "y": "28"
+}
+  ],
+  "howToStakeTwo": [
+    {
+      "id": 1,
+      "title": "SET UP YOUR CRYPTO WALLET",
+      "text": "In the vibrant and ever-evolving world of cryptocurrency, where innovation and creativity reign",
+      "y": "25"
+    },
+    {
+      "id": 2,
+      "title": "PURCHASE ENOUGH ETH OR BTC COIN",
+      "text": "In the vibrant and ever-evolving world of cryptocurrency, where innovation and creativity reign",
+      "y": "25"
+    },
+    {
+      "id": 3,
+      "title": "SWAP ETH BNB FOR MEMECOIN",
+      "text": "In the vibrant and ever-evolving world of cryptocurrency, where innovation and creativity reign",
+      "y": "28"
+    },
+    {
+      "id": 4,
+      "title": "HODL & ENJOY THE JOURNEY",
+      "text": "In the vibrant and ever-evolving world of cryptocurrency, where innovation and creativity reign",
+      "y": "24"
+    }
+  ],
+  "howToStakeThree": [
+    {
+      "id": 1,
+      "title": "SWAP ETH BNB FOR MEMECOIN",
+      "text": "In the vibrant and ever-evolving world of cryptocurrency, where innovation and creativity reign",
+      "y": "25"
+    },
+    {
+      "id": 2,
+      "title": "PURCHASE ETH OR BNB",
+      "text": "In the vibrant and ever-evolving world of cryptocurrency, where innovation and creativity reign",
+      "y": "25"
+    },
+    {
+      "id": 3,
+      "title": "SWAP ETH BNB FOR MEMECOIN",
+      "text": "In the vibrant and ever-evolving world of cryptocurrency, where innovation and creativity reign",
+      "y": "28"
+    },
+    {
+      "id": 4,
+      "title": "HODL & ENJOY THE JOURNEY",
+      "text": "In the vibrant and ever-evolving world of cryptocurrency, where innovation and creativity reign",
+      "y": "24"
+    }
+  ]
+}

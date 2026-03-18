@@ -1,0 +1,15 @@
+{
+  "about": {
+    "title": "What is Dorkcoin?",
+    "description": "At its heart, Dorkcoin is a playful memecoin created for the internet’s proud misfits — the Real Dorks. It runs on its own blockchain and uses a Proof-of-Stake (PoS) consensus algorithm rather than traditional Proof-of-Work mining, meaning the network is secured by participants who stake their coins and help keep the system running efficiently.\n ",
+    "description2": "More than just a coin, Dorkcoin celebrates a fun and inclusive culture where curiosity, creativity, and unapologetic dorkiness are embraced. Built for Real Dorks everywhere, it’s a community-driven project that mixes humor with the spirit of decentralization and the ever-evolving world of crypto.",
+    "button1": "Download Dork Core",
+    "buttonLink1": "https://github.com/dorkcore/dorkcoin/releases",
+    "button2": "Whitepaper",
+    "buttonLink2": "https://bitcointalk.org/",
+    "images": {
+      "element1": "/img/about-element-1.png",
+      "element2": "/img/about-element-2.png"
+    }
+  }
+}
