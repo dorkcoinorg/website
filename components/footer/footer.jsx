@@ -32,18 +32,18 @@ const FooterOne = () => {
                       </li>
                       <li>
                         <Link
-                          href="https://discord.gg/jZYyJkzeWz"
+                          href="https://x.com/dorkcoinorg"
                           className="link fs-18 text-dark hover:text-primary"
                         >
-                          <Icon icon="tabler:brand-discord" />
+                          <Icon icon="tabler:brand-x" />
                         </Link>
                       </li>
                       <li>
                         <Link
-                          href="https://bitcointalk.org/"
+                          href="https://discord.gg/jZYyJkzeWz"
                           className="link fs-18 text-dark hover:text-primary"
                         >
-                          <Icon icon="tabler:file-text" />
+                          <Icon icon="tabler:brand-discord" />
                         </Link>
                       </li>
                     </ul>
