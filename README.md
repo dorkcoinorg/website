@@ -22,7 +22,7 @@ The goal of this project is to provide a lightweight, fast, and easy-to-maintain
 ## 1. Clone the repository
 
 ```bash
-git clone https://github.com/dorkcore/website.git
+git clone https://github.com/dorkcoinorg/website.git
 cd website
 ```
 

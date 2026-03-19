@@ -16,7 +16,7 @@ const FooterOne = () => {
                 <div className="row g-4 justify-content-center align-items-center">
                   <div className="col-lg-5">
                     <p className="mb-0 ff-2 text-dark text-center text-lg-start">
-                      &copy; Dorkcoin 2026. <a href="https://github.com/dorkcore/website/">Built</a> by Real Dorks.
+                      &copy; Dorkcoin 2026. <a href="https://github.com/dorkcoinorg/website/">Built</a> by Real Dorks.
                     
                     </p>
                   </div>
@@ -24,7 +24,7 @@ const FooterOne = () => {
                     <ul className="list list-row gap-4 flex-wrap justify-content-center justify-content-lg-end">
                       <li>
                         <Link
-                          href="https://github.com/dorkcore"
+                          href="https://github.com/dorkcoinorg"
                           className="link fs-18 text-dark hover:text-primary"
                         >
                           <Icon icon="tabler:brand-github" />
