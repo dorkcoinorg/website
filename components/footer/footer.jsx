@@ -40,7 +40,7 @@ const FooterOne = () => {
                       </li>
                       <li>
                         <Link
-                          href="https://discord.gg/mJhfxDWZ"
+                          href="https://discord.gg/H5XEaXSG5m"
                           className="link fs-18 text-dark hover:text-primary"
                         >
                           <Icon icon="tabler:brand-discord" />
