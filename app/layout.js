@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
         content="memecoin, crypto, p2p, cryptocurrency, blockchain, PoS, Proof of Stake"
       />
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://dorkcoin.com/" />
+      <link rel="canonical" href="https://dorkcoin.org/" />
 
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Dorkcoin - Real Dorks' Cryptocurrency" />
