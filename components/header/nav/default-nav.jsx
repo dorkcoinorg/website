@@ -8,7 +8,6 @@ const menuLinks = [
   { id: 1, label: "About", path: "about" },
   { id: 2, label: "How to Stake", path: "how-to-stake" },
   { id: 3, label: "Dork Explorer", href: "https://explorer.dorkcoin.org" },
-  { id: 4, label: "Support Project", href: "https://donate.dorkcoin.org" },
 ];
 
 const DefaultNav = () => {
