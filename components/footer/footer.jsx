@@ -19,6 +19,18 @@ const FooterOne = () => {
                       &copy; Dorkcoin 2026. <a href="https://github.com/dorkcoinorg/website/">Built</a> by Real Dorks.
                     
                     </p>
+                    <div className="col-lg-7">
+                    <ul className="list list-row gap-4 flex-wrap justify-content-center justify-content-lg-end">
+                      <li>
+                        <Link
+                          href="https://github.com/dorkcoinorg"
+                          className="link fs-18 text-dark hover:text-primary"
+                        >
+                          <Icon icon="tabler:brand-github" />
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
                   </div>
                 </div>
               </div>
