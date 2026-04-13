@@ -20,26 +20,6 @@ const FooterOne = () => {
                     
                     </p>
                   </div>
-                  <div className="col-lg-7">
-                    <ul className="list list-row gap-4 flex-wrap justify-content-center justify-content-lg-end">
-                      <li>
-                        <Link
-                          href="https://github.com/dorkcoinorg"
-                          className="link fs-18 text-dark hover:text-primary"
-                        >
-                          <Icon icon="tabler:brand-github" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="https://discord.gg/H5XEaXSG5m"
-                          className="link fs-18 text-dark hover:text-primary"
-                        >
-                          <Icon icon="tabler:brand-discord" />
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
                 </div>
               </div>
             </div>
