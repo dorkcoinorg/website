@@ -1,44 +1,66 @@
-import Image from "next/image";
 import React from "react";
-
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 
-
 const FooterOne = () => {
   return (
-    <>
-      <footer className="section-space-top section-space-sm-bottom position-relative z-1">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="border border-dark shadow-sharp rounded-4 p-8 bg-light position-relative z-1">
-                <div className="row g-4 justify-content-center align-items-center">
-                  <div className="col-lg-5">
-                    <p className="mb-0 ff-2 text-dark text-center text-lg-start">
-                      &copy; Dorkcoin 2026. <a href="https://github.com/dorkcoinorg/website/">Built</a> by Real Dorks.
-                    
-                    </p>
-                    <div className="col-lg-7">
-                    <ul className="list list-row gap-4 flex-wrap justify-content-center justify-content-lg-end">
-                      <li>
-                        <Link
-                          href="https://github.com/dorkcoinorg"
-                          className="link fs-18 text-dark hover:text-primary"
-                        >
-                          <Icon icon="tabler:brand-github" />
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  </div>
-                </div>
-              </div>
+    <footer className="section-space-top section-space-sm-bottom position-relative z-1">
+
+      <div className="container">
+
+        <div className="border border-dark shadow-sharp rounded-5 p-8 bg-light">
+
+          <div className="row align-items-center g-4">
+
+            {/* LEFT */}
+            <div className="col-lg-6 text-center text-lg-start">
+
+              <p className="mb-1 ff-2 text-dark">
+                © 2026 Dorkcoin. Built by Real Dorks.
+              </p>
+
             </div>
+
+            {/* RIGHT */}
+            <div className="col-lg-6">
+
+              <div className="d-flex justify-content-center justify-content-lg-end align-items-center gap-2">
+
+                {/* GITHUB */}
+                <Link
+                  href="https://github.com/dorkcoinorg/dorkcoin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-light border border-dark rounded d-flex align-items-center gap-1 px-2 py-1"
+                  style={{ fontSize: "12px" }}
+                >
+                  <Icon icon="tabler:brand-github" width={14} />
+                  Source Code
+                </Link>
+
+                {/* WEBSITE */}
+                <Link
+                  href="https://github.com/dorkcoinorg/website/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-light border border-dark rounded d-flex align-items-center gap-1 px-2 py-1"
+                  style={{ fontSize: "12px" }}
+                >
+                  <Icon icon="tabler:code" width={14} />
+                  Repo Website
+                </Link>
+
+              </div>
+
+            </div>
+
           </div>
+
         </div>
-      </footer>
-    </>
+
+      </div>
+
+    </footer>
   );
 };
 
