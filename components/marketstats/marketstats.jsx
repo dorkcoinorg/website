@@ -63,11 +63,11 @@ const MarketStats = () => {
         {/* TITLE */}
         <div className="section-space-md-bottom text-center">
           <h2 className="mb-3 text-light text-stroke-md text-shadow-md gsap-text-animation">
-            MARKET <span className="text-secondary">STATS</span>
+            DORKY <span className="text-secondary">STATS</span>
           </h2>
 
           <p className="mb-0 fs-18 text-heading">
-            Live data from the Dorkcoin network
+            Live data from the Dorkcoin explorer
           </p>
         </div>
 
