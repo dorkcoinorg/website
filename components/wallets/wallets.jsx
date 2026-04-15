@@ -44,6 +44,16 @@ const Wallets = () => {
             </Link>
           </div>
 
+          {/* Android Wallet */}
+          <div className="col-6 col-md-4">
+            <Link
+              href="https://github.com/syabiz/dorkcoin-android-wallet/releases/latest"
+              className="btn btn-lg btn-light text-heading w-100 d-flex justify-content-center align-items-center gap-2 rounded gsap-fade-in"
+            >
+              <span className="ff-1">Android Wallet</span>
+            </Link>
+          </div>
+
           {/* OTHERS */}
           <div className="col-6 col-md-4">
             <Link
