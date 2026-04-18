@@ -34,10 +34,10 @@ const Exchanges = () => {
           </div>
           <div className="col-6 col-md-4">
             <Link
-              href="https://cexius.com/trade/DORK-USDT"
+              href="https://trade.nestex.one/spot/dork"
               className="btn btn-lg btn-light text-heading w-100 d-flex justify-content-center align-items-center gap-2 rounded gsap-fade-in"
             >
-              <span className="ff-1">https://trade.nestex.one/spot/dork</span>
+              <span className="ff-1">NestEx</span>
             </Link>
           </div>
           
