@@ -37,7 +37,7 @@ const MarketStats = () => {
   const formatPrice = (v) =>
     v?.toLocaleString(undefined, {
       minimumFractionDigits: 2,
-      maximumFractionDigits: 8,
+      maximumFractionDigits: 6,
     });
 
   const formatNumber = (v) =>
