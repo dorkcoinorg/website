@@ -26,6 +26,18 @@ const FooterOne = () => {
 
               <div className="d-flex justify-content-center justify-content-lg-end align-items-center gap-2">
 
+                {/* X (TWITTER) */}
+                <Link
+                  href="https://x.com/dorkcoinorg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-light border border-dark rounded d-flex align-items-center gap-1 px-2 py-1"
+                  style={{ fontSize: "12px" }}
+                >
+                  <Icon icon="tabler:brand-x" width={14} />
+                  X (Twitter)
+                </Link>
+                
                 {/* GITHUB */}
                 <Link
                   href="https://github.com/dorkcoinorg/dorkcoin"
