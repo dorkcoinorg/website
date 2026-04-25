@@ -37,7 +37,7 @@ const Wallets = () => {
           {/* DORK BOT */}
           <div className="col-6 col-md-4">
             <Link
-              href="https://discord.gg/H5XEaXSG5m"
+              href="https://discord.gg/dorkcoin"
               className="btn btn-lg btn-light text-heading w-100 d-flex justify-content-center align-items-center gap-2 rounded gsap-fade-in"
             >
               <span className="ff-1">Dork Bot</span>

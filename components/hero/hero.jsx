@@ -33,7 +33,7 @@ const Hero = () => {
               </h1>
               <div className="d-flex justify-content-center align-items-center flex-wrap gap-4">
                 <Link
-                  href="https://discord.gg/H5XEaXSG5m"
+                  href="https://discord.gg/dorkcoin"
                   className="btn btn-lg btn-light text-heading align-items-center rounded rounded gsap-fade-in"
                   data-delay="1.15"
                   data-y="50%"
