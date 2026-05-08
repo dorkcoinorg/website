@@ -2,6 +2,25 @@
 
 import { useState, useRef, useEffect } from "react";
 
+function escapeHtml(unsafe) {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function formatMessageContent(text) {
+  if (!text) return "";
+  let escaped = escapeHtml(text);
+  escaped = escaped.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
+    '<a href="$2" target="_blank" rel="noreferrer noopener" class="text-dork underline hover:text-yellow-300">$1</a>'
+  );
+  escaped = escaped.replace(/\r?\n/g, "<br />");
+  return escaped;
+}
+
 function ChatWidgetInner() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([]);
@@ -138,7 +157,10 @@ function ChatWidgetInner() {
                       : "bg-slate-800 text-slate-100 rounded-bl-none"
                   }`}
                 >
-                  <p className="text-sm break-words">{message.content}</p>
+                  <div
+                    className="text-sm break-words whitespace-pre-wrap leading-6"
+                    dangerouslySetInnerHTML={{ __html: formatMessageContent(message.content) }}
+                  />
                 </div>
               </div>
             ))}

@@ -190,8 +190,9 @@ function buildKnowledgeBase() {
 export async function POST(request) {
   try {
     const { message, history } = await request.json();
+    const OPENROUTER_API_KEY = process.env.NEXT_PUBLIC_OPENROUTER_API_KEY || process.env.OPENROUTER_API_KEY;
 
-    if (!process.env.NEXT_PUBLIC_OPENROUTER_API_KEY) {
+    if (!OPENROUTER_API_KEY) {
       return new Response(
         JSON.stringify({ error: "OpenRouter API key not configured" }),
         { status: 500 }
@@ -204,23 +205,29 @@ export async function POST(request) {
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": `Bearer ${process.env.NEXT_PUBLIC_OPENROUTER_API_KEY}`,
+        "Authorization": `Bearer ${OPENROUTER_API_KEY}`,
         "Accept": "application/json",
-        "HTTP-Referer": `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}`,
+        "Referer": `${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}`,
         "X-OpenRouter-Title": "Dorkcoin Dorkipedia AI Chat",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "openai/gpt-3.5-turbo",
+        model: "perplexity/sonar",
         messages: [
           {
             role: "system",
-            content: `You are a helpful AI assistant for Dorkcoin. You answer questions ONLY based on the provided Dorkipedia knowledge base. Do not draw information from the internet or general knowledge. If a question cannot be answered using the knowledge base provided, say "I don't have information about that in the Dorkipedia documentation. Please check the official Dorkcoin resources or community channels."
+            content: `You are a helpful AI assistant for Dorkcoin. You have learned from the Dorkipedia documentation and from user conversations. Answer in your own words, using a silly memecoin style: playful, dorky, and a bit goofy, but always honest and clear.
 
-KNOWLEDGE BASE:
-${knowledgeBase}
+Use plain text and only simple markdown for links. Do not use headings, bold, italics, or lists. When you include a link, use markdown link syntax like [label](https://example.com). Never copy or quote text verbatim from any source, including Dorkipedia.
 
-Be friendly, concise, and accurate. Always cite which section of the Dorkipedia you're referencing when helpful.`,
+Do not mention sections, citations, URLs, references, or any source names. Do not show any quote marks around information taken from the knowledge base or the internet.
+
+If you need more information than Dorkipedia contains, use the internet quietly as a hidden source. Do not tell the user that you searched the web. Just answer naturally from your knowledge.
+
+Use emoji mainly as 🤓 to sound dorky. Avoid Pepe or other cartoon mascots.
+
+KNOWLEDGE BASE (internal reference only, do not quote or copy from it):
+${knowledgeBase}`,
           },
           ...history,
           { role: "user", content: message },
@@ -231,9 +238,15 @@ Be friendly, concise, and accurate. Always cite which section of the Dorkipedia 
     });
 
     if (!response.ok) {
-      const error = await response.json();
+      let details;
+      try {
+        details = await response.json();
+      } catch (e) {
+        details = await response.text();
+      }
+      console.error("OpenRouter response error:", response.status, details);
       return new Response(
-        JSON.stringify({ error: "Failed to get response from OpenRouter", details: error }),
+        JSON.stringify({ error: "Failed to get response from OpenRouter", details }),
         { status: response.status }
       );
     }
@@ -241,7 +254,7 @@ Be friendly, concise, and accurate. Always cite which section of the Dorkipedia 
     const data = await response.json();
     return new Response(
       JSON.stringify({
-        reply: data.choices[0].message.content,
+        reply: data.choices?.[0]?.message?.content || "",
       }),
       { status: 200 }
     );
