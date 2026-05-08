@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Stopbuck";
+  src: url("/fonts/Stopbuck.ttf");
+}
+
+:root {
+  --background: #020617;
+  --foreground: #e2e8f0;
+  --surface: #0f172a;
+  --surface-2: #111827;
+  --muted: #94a3b8;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: linear-gradient(180deg, #020617 0%, #0f172a 35%, #020617 100%);
+}
+
+/* Mobile viewport fixes */
+@media screen and (max-width: 768px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Prevent zoom on input focus */
+  input, textarea, select {
+    font-size: 16px !important;
+  }
+}
+
+.text-shadow {
+  text-shadow: 4px 0 #64748b, -4px 0 #64748b, 0 4px #64748b, 0 -4px #64748b,
+    4px 4px #64748b, -4px -4px #64748b, -4px 4px #64748b, 4px -4px #64748b;
+}
+
+.text-shadow-dork {
+  text-shadow: 4px 0 #eac837, -4px 0 #eac837, 0 4px #eac837, 0 -4px #eac837,
+    4px 4px #eac837, -4px -4px #eac837, -4px 4px #eac837, 4px -4px #eac837;
+}
+
+.text-shadow-dork-not-hover:not(:hover) {
+  text-shadow: 
+    0 0 6px rgba(255, 255, 255, 0.6),
+    0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+.cloud {
+  height: 180px; /* control the size */
+  aspect-ratio: 1.8;
+  --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+  --s: radial-gradient(70% 70%, #000 98%, #0000) no-repeat;
+  mask: var(--g) 100% 100%/30% 60%, var(--g) 70% 0/50% 100%,
+    var(--g) 0 100%/36% 68%, var(--g) 27% 18%/26% 40%,
+    linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
+  background: #f5f3f4;
+}
+

@@ -1,145 +1,83 @@
 # Dorkcoin Website
 
-Official landing page for the **Dorkcoin** available at https://dorkcoin.org
+This repository contains the public website for **Dorkcoin**, built with **Next.js** using the App Router.
 
-This repository contains a landing page built with **Next.js**.
+The site is designed to be easy to update, maintain, and contribute to by the community.
 
-The goal of this project is to provide a lightweight, fast, and easy-to-maintain website for the Dorkcoin.
+## Overview
 
----
+- Framework: **Next.js 15**
+- Styling: **Tailwind CSS**
+- Layout: **App Router** with server and client components
+- Content: website sections are composed from React components
+- Deployment: works with **Vercel**, **Netlify**, or any Node-compatible hosting
 
-## Tech Stack
+## Getting Started
 
-- Next.js
-- React
-- Node.js
-- npm
-
----
-
-# Getting Started
-
-## 1. Clone the repository
-
-```bash
-git clone https://github.com/dorkcoinorg/website.git
-cd website
-```
-
-## 2. Install dependencies
-
-```bash
+### 1. Install dependencies
+```sh
 npm install
 ```
 
-## 3. Run development server
-
-```bash
+### 2. Run locally
+```sh
 npm run dev
 ```
 
-The site will be available at:
-
-```
+### 3. Open in browser
+```sh
 http://localhost:3000
 ```
 
-Changes will automatically reload during development.
+## Repository Structure
 
----
+- `app/` — main application routes and layout
+- `components/` — reusable UI components
+- `public/` — static assets like images and fonts
+- `app/api/` — server API routes
+- `app/(landing)/_components/` — landing page sections and content
 
-# Production Build
+## Contributing
 
-To build the project for production:
+This repo is public and open for contributions. If you want to help improve the Dorkcoin website, please follow these steps:
 
-```bash
-npm run build
+1. Fork the repository
+2. Create a feature branch for your changes
+3. Make your updates
+4. Open a pull request with a clear description
+
+### Suggested improvements
+
+- update site copy and branding
+- improve responsiveness and accessibility
+- add new sections or visuals
+- fix layout or styling issues
+- optimize performance
+
+## Development Notes
+
+- Keep UI changes consistent with the Dorkcoin brand
+- Use Tailwind utility classes for styling
+- Prefer semantic HTML and accessible markup
+- Keep components small and reusable
+- Restart the dev server after changing `.env.local`
+
+## Environment
+
+This project may use environment variables for local configuration. If any variables are needed, they should be defined in a `.env.local` file in the repo root.
+
+Example:
+```env
+NEXT_PUBLIC_ENABLE_AI_CHAT=true
+NEXT_PUBLIC_OPENROUTER_API_KEY=your_api_key_here
 ```
 
-To start the production server:
+> Only add non-sensitive configuration to `.env.local`. Do not commit secret keys to the repository.
 
-```bash
-npm start
-```
+## Deployment
 
----
+Deploy the site to a platform that supports Next.js apps. For Vercel, connect the repository and follow the deployment prompts.
 
-# Project Structure
+## License
 
-Example structure:
-
-```
-/pages        - Next.js pages
-/components   - Reusable UI components
-/public       - Static assets and CSS / styling
-```
-
----
-
-# Contributing
-
-Contributions are welcome.
-
-If you want to improve the website, fix bugs, or add new features, please follow these steps:
-
-### 1. Fork the repository
-
-Click **Fork** on GitHub and create your own copy.
-
-### 2. Create a new branch
-
-```bash
-git checkout -b feature/your-feature-name
-```
-
-### 3. Make your changes
-
-Edit files and test locally using:
-
-```bash
-npm run dev
-```
-
-### 4. Commit your changes
-
-```bash
-git add .
-git commit -m "Short description of the change"
-```
-
-### 5. Push your branch
-
-```bash
-git push origin feature/your-feature-name
-```
-
-### 6. Open a Pull Request
-
-Submit a **Pull Request** describing your changes.
-
----
-
-# Commit Guidelines
-
-Please use clear commit messages.
-
-Examples:
-
-```
-fix: correct typo in hero section
-style: improve mobile layout
-```
-
----
-
-# Reporting Issues
-
-If you find a bug or want to suggest an improvement, please open an **Issue** in this repository.
-
----
-
-# License
-
-This repo is part of the Dorkcoin ecosystem.
-
----
+This project is intended for open community contribution. If a license is needed, add one to the repository root.
