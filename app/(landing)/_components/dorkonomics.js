@@ -57,46 +57,46 @@ const Dorkconomics = () => {
   const cards = data
     ? [
         {
-          img: "price.png",
+          img: "price.webp",
           title: "Price",
           desc: formatValue(data.price, 6, "$"),
         },
         {
-          img: "mcap.png",
+          img: "mcap.webp",
           title: "Market Cap",
           desc: formatMarketCap(data.marketCap),
         },
         {
-          img: "emission.png",
+          img: "emission.webp",
           title: "Emission (24h)",
           desc: formatValue(data.emission24h, 0),
         },
         {
-          img: "supply.png",
+          img: "supply.webp",
           title: "Current Supply",
           desc: formatValue(data.coinSupply, 0),
         },
         {
-          img: "reward.png",
+          img: "reward.webp",
           title: "Block Reward",
           desc: "100 DORK",
         },
 
 
         {
-          img: "time.png",
+          img: "time.webp",
           title: "BLOCK TIME",
           desc: "1 MIN",
         },
 
         {
-          img: "donations.png",
+          img: "donations.webp",
           title: "DONATIONS",
           desc: "1% of rewards",
         },
 
         {
-          img: "maxsupply.png",
+          img: "maxsupply.webp",
           title: "Max Supply",
           desc: "Unlimited",
         },

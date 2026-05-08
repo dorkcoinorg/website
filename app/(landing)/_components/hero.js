@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="h-dvh">
-      <div className="bg-[url(/img/hero.png)] bg-center bg-cover bg-no-repeat fixed top-0 left-0 h-full w-full -z-10"></div>
+      <div className="bg-[url(/img/hero.webp)] bg-center bg-cover bg-no-repeat fixed top-0 left-0 h-full w-full -z-10"></div>
       <div className="relative z-10 flex h-full items-center justify-center px-6">
         <div className="text-center max-w-4xl">
           <p className="uppercase tracking-[0.5em] text-dork text-sm font-medium mb-4">

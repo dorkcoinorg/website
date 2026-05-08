@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import Header from "./_components/header";
 import Nav from "./_components/nav";
 import Hero from "./_components/hero";
@@ -27,15 +25,12 @@ export default function Home() {
         <div className="max-w-[85rem] mx-auto mt-24">
           <span className="flex items-center">
             <span className="h-[3px] flex-1 bg-dork"></span>
-            <div>
-              <Image
-                className=""
-                src="/img/bottom-1.png"
-                width={300}
-                height={300}
-                alt="dorkcoin-7"
-              />
-            </div>
+            <div
+              role="img"
+              aria-label="bottom graphic 1"
+              className="w-[300px] h-[300px] mx-auto bg-cover bg-center"
+              style={{ backgroundImage: "url('/img/bottom-1.webp')" }}
+            />
             <span className="h-[3px] flex-1 bg-dork"></span>
           </span>
         </div>
@@ -49,15 +44,12 @@ export default function Home() {
         <div className="max-w-[85rem] mx-auto mt-24">
           <span className="flex items-center">
             <span className="h-[3px] flex-1 bg-dork"></span>
-            <div>
-              <Image
-                className=""
-                src="/img/bottom-2.png"
-                width={300}
-                height={300}
-                alt="dorkcoin-5"
-              />
-            </div>
+            <div
+              role="img"
+              aria-label="bottom graphic 2"
+              className="w-[300px] h-[300px] mx-auto bg-cover bg-center"
+              style={{ backgroundImage: "url('/img/bottom-2.webp')" }}
+            />
             <span className="h-[3px] flex-1 bg-dork"></span>
           </span>
         </div>

@@ -31,7 +31,7 @@ const cards = [
 
 const Socials = () => {
   return (
-    <div>
+    <div className="relative z-10">
       <div className="hidden">
         <h2 className="font-stopbuck text-6xl text-dork text-shadow text-center">
           Socials

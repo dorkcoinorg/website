@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const About = () => {
   return (
@@ -19,15 +18,12 @@ const About = () => {
         {/* MAIN GRID */}
         <div className="grid lg:grid-cols-2 gap-8 items-center">
 
-          <div>
-            <Image
-              className="w-full h-auto object-cover rounded-2xl"
-              src="/img/about.png"
-              width={700}
-              height={700}
-              alt="Dorkcoin Image"
-            />
-          </div>
+          <div
+            role="img"
+            aria-label="Dorkcoin image"
+            className="w-full max-w-[720px] aspect-[1496/1024] rounded-2xl overflow-hidden bg-center bg-no-repeat bg-contain"
+            style={{ backgroundImage: "url('/img/about.webp')" }}
+          />
 
           <div className="font-mono text-slate-200 text-base sm:text-lg leading-relaxed space-y-4">
             <p>

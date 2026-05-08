@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const Dorkipedia = () => {
   return (
@@ -15,12 +14,11 @@ const Dorkipedia = () => {
             Complete documentation and answers
           </h3>
 
-          <Image
-            className="object-cover mx-auto"
-            src="/img/dorkipedia.png"
-            width={700}
-            height={700}
-            alt="Dorkcoin Image"
+          <div
+            role="img"
+            aria-label="Dorkipedia illustration"
+            className="w-full max-w-[700px] h-[420px] sm:h-[520px] rounded-3xl bg-contain bg-no-repeat bg-center mx-auto"
+            style={{ backgroundImage: "url('/img/dorkipedia.webp')" }}
           />
 
           <a

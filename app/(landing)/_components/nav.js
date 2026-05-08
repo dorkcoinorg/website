@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
@@ -36,14 +35,16 @@ const Nav = () => {
         {/* Logo */}
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
-            <Image
-              src="/img/logo.png"
-              width={500}
-              height={500}
-              className={`transition-all duration-300 ${
-                isScrolled ? "h-14 w-auto" : "h-20 w-auto"
+            <div
+              role="img"
+              aria-label="logo coin"
+              className={`transition-all duration-300 bg-no-repeat bg-center ${
+                isScrolled ? "h-14 w-[120px]" : "h-20 w-[140px]"
               }`}
-              alt="logo coin"
+              style={{
+                backgroundImage: "url('/img/logo.webp')",
+                backgroundSize: "contain",
+              }}
             />
           </Link>
         </div>

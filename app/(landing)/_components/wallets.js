@@ -2,7 +2,7 @@ import React from "react";
 
 const wallets = [
   {
-    logo: "/img/logo.png",
+    logo: "/img/logo.webp",
     title: "Dork Core",
     link: "https://github.com/dorkcoinorg/dorkcoin/releases/latest",
   },
@@ -34,10 +34,11 @@ const Wallets = () => {
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-3"
           >
-            <img
-              src={ex.logo}
-              alt={ex.title}
-              className="w-20 h-20 object-contain"
+            <div
+              role="img"
+              aria-label={ex.title}
+              className="w-20 h-20 bg-center bg-no-repeat bg-contain hover-spin-reverse"
+              style={{ backgroundImage: `url(${ex.logo})` }}
             />
             <span className="text-slate-100 font-semibold">
               {ex.title}
