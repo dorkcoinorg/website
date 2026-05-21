@@ -7,6 +7,11 @@ const wallets = [
     link: "https://github.com/dorkcoinorg/dorkcoin/releases/latest",
   },
   {
+    logo: "/img/logo.webp",
+    title: "Dork Bot",
+    link: "https://Discord.gg/dorkcoin",
+  },
+  {
     logo: "/logos/coindrop.webp",
     title: "CoinDrop",
     link: "https://www.coindrop.cc/",
