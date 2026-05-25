@@ -22,11 +22,6 @@ const cards = [
     title: "Discord",
     icon: "Discord",
   },
-  {
-    link: "https://t.me/dorkcoinorg",
-    title: "Telegram",
-    icon: "Telegram",
-  },
 ];
 
 const Socials = () => {
