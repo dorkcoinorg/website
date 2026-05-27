@@ -18,7 +18,7 @@ const cards = [
     icon: "X",
   },
   {
-    link: "https://discord.gg/dorkcoin",
+    link: "https://discord.gg/QY68bBEUAa",
     title: "Discord",
     icon: "Discord",
   },
