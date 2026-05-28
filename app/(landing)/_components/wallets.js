@@ -8,8 +8,8 @@ const wallets = [
   },
   {
     logo: "/img/logo.webp",
-    title: "Dork Bot",
-    link: "https://Discord.gg/dorkcoin",
+    title: "Dorky App",
+    link: "https://dorkyapp.com",
   },
   {
     logo: "/logos/coindrop.webp",
