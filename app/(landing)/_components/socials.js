@@ -12,16 +12,6 @@ const cards = [
     title: "Github",
     icon: "Github",
   },
-  {
-    link: "https://x.com/dorkcoinorg",
-    title: "X",
-    icon: "X",
-  },
-  {
-    link: "https://discord.gg/vbCy7ug2yJ",
-    title: "Discord",
-    icon: "Discord",
-  },
 ];
 
 const Socials = () => {
