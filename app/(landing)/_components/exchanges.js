@@ -2,11 +2,6 @@ import React from "react";
 
 const exchanges = [
   {
-    logo: "/img/logo.webp",
-    title: "Dorkswap",
-    link: "https://dorkswap.com",
-  },
-  {
     logo: "/logos/nestex.webp",
     title: "NestEx",
     link: "https://trade.nestex.one/spot/dork",
